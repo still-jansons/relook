@@ -116,4 +116,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('[data-reveal]').forEach(el => observer.observe(el));
 
+  emailjs.init({ publicKey: '9uK_v5GaV1fdbuGgZ' });
+
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const submitBtn = contactForm.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn.innerText;
+
+      submitBtn.innerText = 'Sūta...';
+      submitBtn.disabled = true;
+
+      const params = {
+        name:    contactForm.querySelector('[name="name"]').value,
+        email:   contactForm.querySelector('[name="email"]').value,
+        plan:    (contactForm.querySelector('[name="plan"]:checked') || {}).value || '',
+        message: contactForm.querySelector('[name="message"]').value,
+      };
+
+      emailjs.send('service_tb4qksd', 'template_pevx3eu', params)
+        .then(() => {
+          alert('Paldies! Ziņa ir nosūtīta veiksmīgi.');
+          contactForm.reset();
+        })
+        .catch((error) => {
+          console.error('EmailJS kļūda:', error);
+          alert('Ups! Kaut kas nogāja greizi. Lūdzu, mēģiniet vēlreiz vēlāk.');
+        })
+        .finally(() => {
+          submitBtn.innerText = originalBtnText;
+          submitBtn.disabled = false;
+        });
+    });
+  }
+
 });
