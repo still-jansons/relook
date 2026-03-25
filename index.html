@@ -1,28 +1,21 @@
 <!doctype html>
 <html class="no-js" lang="lv">
-
 <head>
+  <title>Relook</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-
-  <title>Relook</title>
   <meta name="description" content="">
-
   <meta property="og:title" content="">
   <meta property="og:type" content="">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
   <meta property="og:image:alt" content="">
-
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#12AEA1">
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" href="icon.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="icon.png">
-
-  <meta name="mobile-web-app-capable" content="yes">
-
   <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#12AEA1">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -30,481 +23,427 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.5.0/css/flag-icons.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 <div class="page-background"></div>
-
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light py-5">
-      <div class="container">
-        <a class="navbar-brand" href="./">
-          <img src="img/relook.svg" alt="Relook" height="24" class="logo-default">
-          <img src="img/footer_logo.svg" alt="Relook" height="24" class="logo-white">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="menu">
-          <ul class="navbar-nav ms-auto gap-4">
-            <li class="nav-item"><a class="nav-link" href="#profiles">Klientu profili</a></li>
-            <li class="nav-item"><a class="nav-link" href="#services">Pakalpojumi</a></li>
-            <li class="nav-item"><a class="nav-link" href="#experience">Pieredze</a></li>
-            <li class="nav-item"><a class="nav-link" href="#prices">Cenas</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contacts">Kontakti</a></li>
-
-            <!-- Desktop language dropdown (hidden on mobile) -->
-            <li class="nav-item dropdown custom-lang-dropdown desktop-lang">
-              <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="language" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <span class="fi fi-lv me-2"></span> LV
-              </a>
-              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="language">
-                <li>
-                  <a class="dropdown-item active" href="./">
-                    <span class="check-icon ms-3"></span>
-                    Latviešu
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="en/">
-                    <span class="check-icon ms-3"></span>
-                    English
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <!-- Mobile language selector (inline, shown in overlay) -->
-            <li class="nav-item mobile-lang">
-              <button class="lang-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#mobileLangOptions" aria-expanded="false" aria-controls="mobileLangOptions">
-                <span class="fi fi-lv"></span> LV
-                <span class="lang-arrow"></span>
-              </button>
-              <div class="collapse" id="mobileLangOptions">
-                <div class="mobile-lang-options">
-                  <a href="./" class="lang-option active-lang">
-                    <span class="check-icon ms-3"></span>
-                    Latviešu
-                  </a>
-                  <a href="en/" class="lang-option">
-                    <span class="check-icon ms-3"></span>
-                    English
-                  </a>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-
-    <section id="hero" class="py-5 text-center">
-      <div class="container">
-        <h1>Digitālais mārketings no jauna skatpunkta</h1>
-        <p>Pielāgoti digitālā mārketinga risinājumi uzņēmumu izaugsmei. Mēs fokusējamies uz izmērāmiem rezultātiem, nevis īslaicīgiem trendiem.</p>
-
-        <ul class="list-unstyled row text-center mt-4">
-          <li class="col-md-3 mb-3">
-            <strong>Satura mārketings</strong>
-          </li>
-          <li class="col-md-3 mb-3">
-            <strong>Digitālās reklāmas un mediji</strong>
-          </li>
-          <li class="col-md-3 mb-3">
-            <strong>B2B kontaktu ģenerēšana</strong>
-          </li>
-          <li class="col-md-3 mb-3">
-            <strong>Dati un audits</strong>
-          </li>
-        </ul>
-
-        <a href="#contacts" class="btn btn-primary" aria-label="Pieteikt konsultāciju">Pieteikt konsultāciju</a>
-      </div>
-    </section>
-
-    <section id="profiles" class="py-5">
-      <div class="container">
-        <p class="text-center section-label">Klientu profili</p>
-        <h2 class="text-center mb-4">Reāls skatījums uz digitālo mārketingu dažādās industrijās</h2>
-
-        <div class="row g-4">
-          <div class="col-12 col-md-6">
-            <div class="profile-card">
-              <h3>B2C uzņēmumi</h3>
-              <p>Stratēģiski sakārtots saturs, reklāmas un digitālie risinājumi klientu piesaistei un noturēšanai.</p>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6">
-            <div class="profile-card">
-              <h3>B2B uzņēmumi</h3>
-              <p>Kvalitatīvu kontaktu un līdu ģenerēšana, veidojot stabilu pārdošanas pipeline ar organisko saturu, tehniskiem risinājumiem un maksas reklāmu.</p>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6">
-            <div class="profile-card">
-              <h3>E-komercija</h3>
-              <p>Datu analīze, SEO un tehniski risinājumi konversiju uzlabošanai un pārdošanas izaugsmei.</p>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6">
-            <div class="profile-card">
-              <h3>Sakārto mārketingu</h3>
-              <p>Piesakies digitālā mārketinga auditam vai izmēģini mūsu pakalpojumus ar 50% atlaidi pirmajam mēnesim.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="services" class="py-5">
-      <div class="container">
-        <p class="text-center section-label">Pakalpojumi</p>
-        <h2 class="text-center mb-4">Mūsu pakalpojumi</h2>
-
-        <div class="row g-4">
-          <div class="col-12 col-md-6">
-            <div class="p-3">
-              <h3>Satura mārketings</h3>
-              <ul class="list-unstyled mt-4">
-                <li>Pilna apjoma satura izstrāde sociālajiem tīkliem</li>
-                <li>Video satura veidošana</li>
-                <li>Bloga rakstu izveide</li>
-                <li>Dizaina risinājumi</li>
-                <li>E-pastu mārketings</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6">
-            <div class="p-3">
-              <h3>Digitālās reklāmas un mediji</h3>
-              <ul class="list-unstyled mt-4">
-              <li>Facebook, Instagram, LinkedIn un TikTok reklāmas</li>
-                <li>Google Search & Display kampaņas</li>
-                <li>Reklāmas medijos un uz ekrāniem</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6">
-            <div class="p-3">
-              <h3>B2B kontaktu ģenerēšana</h3>
-              <ul class="list-unstyled mt-4">
-                <li>E-pastu automatizācija</li>
-                <li>Kontaktu un līdu ģenerēšana</li>
-                <li>Online semināru un diskusiju video producēšana</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6">
-            <div class="p-3">
-              <h3>Dati un audits</h3>
-              <ul class="list-unstyled mt-4">
-              <li>SEO audits un uzstādīšana</li>
-                <li>Google Analytics uzstādīšana un pielāgošana</li>
-                <li>Digitālā mārketinga audits</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience" class="py-5">
-      <div class="container">
-        <p class="text-center section-label">Pieredze</p>
-        <h2 class="text-center mb-4">Daži skaitļi par mūsu darbu</h2>
-
-        <div class="row g-4 text-center justify-content-center">
-          <div class="col-12 col-md-4">
-            <div class="stat-card">
-              <h3>70%</h3>
-              <p>klientu izvēlas strādāt ilgtermiņā</p>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="stat-card">
-              <h3>50+</h3>
-              <p>priecīgu klientu kopš 2019. gada</p>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="stat-card">
-              <h3>7</h3>
-              <p>gadu pieredze</p>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6">
-            <div class="stat-card">
-              <h3>3000</h3>
-              <p>izveidotas reklāmas kampaņas</p>
-            </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <div class="stat-card">
-              <h3>350 000€</h3>
-              <p>iztērētais reklāmas budžets</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="prices" class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">Cenas</h2>
-        <p class="text-center section-subtitle">Izvēlies sev piemērotāko variantu</p>
-
-        <div class="row g-4">
-          <div class="col-md-6">
-            <div class="price-card">
-              <h3 class="mb-3">Vienreizēji projekti</h3>
-              <p class="description">Piemērots uzņēmumiem, kuriem nepieciešams konkrēts digitālā mārketinga risinājums noteiktā laika periodā.</p>
-
-              <p class="title">Izvēlies, ja ir aktuāla:</p>
-              <ul>
-                <li>Fiksēta cena par konkrētu projektu, bez slēptām izmaksām</li>
-                <li>Ātra uzsākšana un skaidrs izpildes plāns</li>
-                <li>Vienkārša, tieša komunikācija</li>
-                <li>Iespēja projekta gaitā pievienot papildu pakalpojumus</li>
-                <li>Projektam pielāgota komanda un risinājumi</li>
-              </ul>
-
-              <div class="price-footer">
-                <p class="title">Izmaksas:</p>
-                <p class="price-tag">no 1000 € par projektu</p>
-                <div class="text-end">
-                  <a href="#contacts" class="btn btn-primary mt-auto" aria-label="Pieteikt konsultāciju">
-                    Sākt sarunu
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="price-card">
-              <h3 class="mb-3">Ikmēneša sadarbība</h3>
-              <p>Pilna servisa digitālā mārketinga komanda par mazākām izmaksām nekā viena pilna laika darbinieka uzturēšana.</p>
-
-              <p class="title">Izvēlies, ja ir aktuāla:</p>
-              <ul>
-                <li>Pilna piekļuve Relook komandai un kompetencēm</li>
-                <li>Regulāras atskaites un fokusēšanās uz rezultātiem</li>
-                <li>Pakalpojumi pielāgoti tieši jūsu biznesa mērķiem</li>
-                <li>Sociālo tīklu, reklāmu un satura audits</li>
-                <li>Elastība – iespēja pielāgot vai paplašināt pakalpojumus</li>
-              </ul>
-
-              <div class="price-footer">
-                <div class="promo-box mb-3">
-                  <span class="discount">50% atlaide </span><br>
-                  <p class="title">pirmajam mēnesim</p>
-                  <span class="discount-note">Sadarbību iespējams pārtraukt jebkurā brīdī.</span>
-                </div>
-                <p class="title">Izmaksas:</p>
-                <p class="price-tag">no 750 € mēnesī</p>
-                <div class="text-end">
-                  <a href="#contacts" class="btn btn-primary mt-auto" aria-label="Pieteikt konsultāciju">
-                    Sākt sarunu
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="testimonials" class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">Mums uzticās klienti</h2>
-
-        <div class="row mb-4 testimonial-row-1">
-          <div class="col-md-9 col-lg-8">
-            <div class="testimonial-card">
-              <div class="testimonial-logo">
-                <img src="img/mitek.svg" alt="Mitek" class="img-fluid">
-              </div>
-              <div class="testimonial-content">
-                <h3>Mitek Baltic vadītājs</h3>
-                <p>Ar Relook jau sadarbojamies vairāku gadu garumā. Viņi mums nodrošina reklāmu menedžmentu Baltijas tirgū un ar Relook palīdzību izveidojām jaunu Baltijas sadarbības partneru mājaslapu, par kuru mūsu partneri ir ļoti priecīgi.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mb-4 justify-content-center testimonial-row-2">
-          <div class="col-md-9 col-lg-8">
-            <div class="testimonial-card">
-              <div class="testimonial-logo">
-                <img src="img/skypark.svg" alt="Skypark" class="img-fluid">
-              </div>
-              <div class="testimonial-content">
-                <h3>Skypark mārketinga menedžere</h3>
-                <p>Relook izveidoja mums mārketinga stratēģiju, kuru palīdzēja arī ieviest. Kā rezultātā ir uzlabojušies mūsu pārdošanas un organiskā satura rezultāti. Novērtējam to, ka Relook
-                  komanda strādā ļoti operatīvi un īsā laikā var tikt galā ar
-                  mūsu uzdevumiem.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mb-5 testimonial-row-3">
-          <div class="col-md-9 col-lg-8">
-            <div class="testimonial-card">
-              <div class="testimonial-logo">
-                <img src="img/ieroci.svg" alt="Ieroči" class="img-fluid">
-              </div>
-              <div class="testimonial-content">
-                <h3>SIA Ieroči mārketinga vadītājs</h3>
-                <p>
-                  Pirms sadarbības ar Relook, mums nebija pieejama
-                  informācija par mūsu reklāmas kanālu effektivitāti. Relook
-                  veica padziļinātu izpēti un palīdzēja mums optimizēt
-                  mārketinga budžetu, izvēloties effektīvākos mārketinga
-                  kanālus. Viens no lielākajiem šīs sadarbības ieguviem, ir
-                  ikmēneša atskaite, kur vieglā un saprotamā valodā ir
-                  izstāstīts par rezultātiem.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="client-logos-grid mt-5">
-          <img src="img/olearys.svg" alt="O'Learys">
-          <img src="img/apollokino.svg" alt="Apollo">
-          <img src="img/forevers.svg" alt="Forevers">
-          <img src="img/talava.svg" alt="Tālava">
-        </div>
-      </div>
-    </section>
-
-    <section id="benefits" class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">Kāpēc izvēlas Relook</h2>
-
-        <ul class="list-unstyled mx-auto" style="max-width: 600px;">
-          <li class="d-flex align-items-center mb-3">
-            <img src="img/steps.svg" alt="steps" class="me-3 benefit-icon">
-            <p class="mb-0">Strādājam, balstoties datos, nevis pieņēmumos vai trendos</p>
-          </li>
-
-          <li class="d-flex align-items-center mb-3">
-            <img src="img/bulb.svg" alt="bulb" class="me-3 benefit-icon">
-            <p class="mb-0">Praktiska pieredze, ne teorētiski modeļi</p>
-          </li>
-
-          <li class="d-flex align-items-center mb-3">
-            <img src="img/gear.svg" alt="gear" class="me-3 benefit-icon">
-            <p class="mb-0">Elastīga sadarbība: projekti vai ilgtermiņa sadarbība</p>
-          </li>
-
-          <li class="d-flex align-items-center mb-3">
-            <img src="img/arrow.svg" alt="arrow" class="me-3 benefit-icon">
-            <p class="mb-0">Skaidri KPI, atbildība un caurspīdīga komunikācija</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="contacts" class="py-5">
-      <div class="container">
-        <p class="text-center section-label">Kontakti</p>
-        <h2 class="text-center mb-4">Parunāsim par tavu mārketingu</h2>
-        <p class="text-center mb-5 mx-auto">Piesaki zvanu, lai saprastu, kā digitālais mārketings var strādāt tieši tava uzņēmuma izaugsmei</p>
-
-        <form id="contact-form" class="contact-form mx-auto">
-          <div class="mb-4">
-            <label for="name" class="form-label visually-hidden">Vārds</label>
-            <input type="text" class="form-control custom-input" id="name" name="name" placeholder="Vārds" required>
-          </div>
-
-          <div class="mb-4">
-            <label for="email" class="form-label visually-hidden">E-pasts</label>
-            <input type="email" class="form-control custom-input" id="email" name="email" placeholder="E-pasts" required>
-          </div>
-
-          <div class="mb-4 d-flex flex-column gap-3">
-            <div class="custom-radio">
-              <input class="form-check-input" type="radio" name="plan" id="plan30" value="30-dienas" checked>
-              <label class="form-check-label" for="plan30">30 dienas</label>
-            </div>
-
-            <div class="custom-radio">
-              <input class="form-check-input" type="radio" name="plan" id="planMonthly" value="ikmenesa">
-              <label class="form-check-label" for="planMonthly">Ikmēneša sadarbība</label>
-            </div>
-          </div>
-
-          <div class="mb-4">
-            <label for="message" class="form-label visually-hidden">Ziņa</label>
-            <textarea class="form-control custom-input" id="message" name="message" rows="4" placeholder="Ziņa"></textarea>
-          </div>
-
-          <div class="text-end">
-            <button type="submit" class="btn btn-primary px-4">Sūtīt</button>
-          </div>
-
-          <p id="form-error" class="form-error" hidden>Kaut kas nogāja greizi. Lūdzu, mēģiniet vēlreiz vēlāk.</p>
-        </form>
-
-        <div id="form-success" class="text-center" hidden>
-          <h2>Paldies!<br>Sazināsimies ar tevi drīzumā.</h2>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="footer-section py-5">
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light py-5">
     <div class="container">
-      <div class="row align-items-start">
-        <div class="col-md-3 col-6 mb-4 mb-md-0">
-          <ul class="list-unstyled footer-nav">
-            <li><a href="#profiles" class="text-decoration-none">Klientu profili</a></li>
-            <li><a href="#services" class="text-decoration-none">Pakalpojumi</a></li>
-            <li><a href="#experience" class="text-decoration-none">Pieredze</a></li>
-            <li><a href="#prices" class="text-decoration-none">Cenas</a></li>
-            <li><a href="#contacts" class="text-decoration-none">Kontakti</a></li>
-          </ul>
-        </div>
-
-        <div class="col-md-5 col-6 mb-4 mb-md-0">
-          <div class="footer-privacy mb-4">
-            <a href="privacy.html">Privacy / cookies</a>
-          </div>
-          <div class="footer-socials d-flex gap-3">
-            <a href="https://www.facebook.com/RelookAgency" class="social-circle" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
-              <img src="img/facebook.svg" alt="Facebook">
+      <a class="navbar-brand" href="./">
+        <img src="img/relook.svg" alt="Relook" height="24" class="logo-default">
+        <img src="img/footer_logo.svg" alt="Relook" height="24" class="logo-white">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto gap-4">
+          <li class="nav-item"><a class="nav-link" href="#profiles">Klientu profili</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Pakalpojumi</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Pieredze</a></li>
+          <li class="nav-item"><a class="nav-link" href="#prices">Cenas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacts">Kontakti</a></li>
+          <!-- Desktop language dropdown (hidden on mobile) -->
+          <li class="nav-item dropdown custom-lang-dropdown desktop-lang">
+            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="language" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="fi fi-lv me-2"></span> LV
             </a>
-            <a href="https://www.instagram.com/relook.agency/" class="social-circle" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-              <img src="img/instagram.svg" alt="Instagram">
-            </a>
-          </div>
-        </div>
-
-        <div class="col-md-4 text-md-end text-start">
-          <a class="footer-logo" href="./">
-            <img src="img/footer_logo.svg" alt="Relook" height="24">
-          </a>
-        </div>
-
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="language">
+              <li>
+                <a class="dropdown-item active" href="./">
+                  <span class="check-icon ms-3"></span>
+                  Latviešu
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="en/">
+                  <span class="check-icon ms-3"></span>
+                  English
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- Mobile language selector (inline, shown in overlay) -->
+          <li class="nav-item mobile-lang">
+            <button class="lang-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#mobileLangOptions" aria-expanded="false" aria-controls="mobileLangOptions">
+              <span class="fi fi-lv"></span> LV
+              <span class="lang-arrow"></span>
+            </button>
+            <div class="collapse" id="mobileLangOptions">
+              <div class="mobile-lang-options">
+                <a href="./" class="lang-option active-lang">
+                  <span class="check-icon ms-3"></span>
+                  Latviešu
+                </a>
+                <a href="en/" class="lang-option">
+                  <span class="check-icon ms-3"></span>
+                  English
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/app.js"></script>
+  </nav>
+</header>
+<main>
+  <section id="hero" class="py-5 text-center">
+    <div class="container">
+      <h1>Digitālais mārketings no jauna skatpunkta</h1>
+      <p>Pielāgoti digitālā mārketinga risinājumi uzņēmumu izaugsmei. Mēs fokusējamies uz izmērāmiem rezultātiem, nevis īslaicīgiem trendiem.</p>
+      <ul class="list-unstyled row text-center mt-4">
+        <li class="col-md-3 mb-3">
+          <strong>Satura mārketings</strong>
+        </li>
+        <li class="col-md-3 mb-3">
+          <strong>Digitālās reklāmas un mediji</strong>
+        </li>
+        <li class="col-md-3 mb-3">
+          <strong>B2B kontaktu ģenerēšana</strong>
+        </li>
+        <li class="col-md-3 mb-3">
+          <strong>Dati un audits</strong>
+        </li>
+      </ul>
+      <a href="#contacts" class="btn btn-primary" aria-label="Pieteikt konsultāciju">Pieteikt konsultāciju</a>
+    </div>
+  </section>
+  <section id="profiles" class="py-5">
+    <div class="container">
+      <p class="text-center section-label">Klientu profili</p>
+      <h2 class="text-center mb-4">Reāls skatījums uz digitālo mārketingu dažādās industrijās</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-6">
+          <div class="profile-card">
+            <h3>B2C uzņēmumi</h3>
+            <p>Stratēģiski sakārtots saturs, reklāmas un digitālie risinājumi klientu piesaistei un noturēšanai.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="profile-card">
+            <h3>B2B uzņēmumi</h3>
+            <p>Kvalitatīvu kontaktu un līdu ģenerēšana, veidojot stabilu pārdošanas pipeline ar organisko saturu, tehniskiem risinājumiem un maksas reklāmu.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="profile-card">
+            <h3>E-komercija</h3>
+            <p>Datu analīze, SEO un tehniski risinājumi konversiju uzlabošanai un pārdošanas izaugsmei.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="profile-card">
+            <h3>Sakārto mārketingu</h3>
+            <p>Piesakies digitālā mārketinga auditam vai izmēģini mūsu pakalpojumus ar 50% atlaidi pirmajam mēnesim.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="services" class="py-5">
+    <div class="container">
+      <p class="text-center section-label">Pakalpojumi</p>
+      <h2 class="text-center mb-4">Mūsu pakalpojumi</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-6">
+          <div class="p-3">
+            <h3>Satura mārketings</h3>
+            <ul class="list-unstyled mt-4">
+              <li>Pilna apjoma satura izstrāde sociālajiem tīkliem</li>
+              <li>Video satura veidošana</li>
+              <li>Bloga rakstu izveide</li>
+              <li>Dizaina risinājumi</li>
+              <li>E-pastu mārketings</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="p-3">
+            <h3>Digitālās reklāmas un mediji</h3>
+            <ul class="list-unstyled mt-4">
+              <li>Facebook, Instagram, LinkedIn un TikTok reklāmas</li>
+              <li>Google Search & Display kampaņas</li>
+              <li>Reklāmas medijos un uz ekrāniem</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="p-3">
+            <h3>B2B kontaktu ģenerēšana</h3>
+            <ul class="list-unstyled mt-4">
+              <li>E-pastu automatizācija</li>
+              <li>Kontaktu un līdu ģenerēšana</li>
+              <li>Online semināru un diskusiju video producēšana</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="p-3">
+            <h3>Dati un audits</h3>
+            <ul class="list-unstyled mt-4">
+              <li>SEO audits un uzstādīšana</li>
+              <li>Google Analytics uzstādīšana un pielāgošana</li>
+              <li>Digitālā mārketinga audits</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="experience" class="py-5">
+    <div class="container">
+      <p class="text-center section-label">Pieredze</p>
+      <h2 class="text-center mb-4">Daži skaitļi par mūsu darbu</h2>
+      <div class="row g-4 text-center justify-content-center">
+        <div class="col-12 col-md-4">
+          <div class="stat-card">
+            <h3>70%</h3>
+            <p>klientu izvēlas strādāt ilgtermiņā</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="stat-card">
+            <h3>50+</h3>
+            <p>priecīgu klientu kopš 2019. gada</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="stat-card">
+            <h3>7</h3>
+            <p>gadu pieredze</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="stat-card">
+            <h3>3000</h3>
+            <p>izveidotas reklāmas kampaņas</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="stat-card">
+            <h3>350 000€</h3>
+            <p>iztērētais reklāmas budžets</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="prices" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Cenas</h2>
+      <p class="text-center section-subtitle">Izvēlies sev piemērotāko variantu</p>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="price-card">
+            <h3 class="mb-3">Vienreizēji projekti</h3>
+            <p class="description">Piemērots uzņēmumiem, kuriem nepieciešams konkrēts digitālā mārketinga risinājums noteiktā laika periodā.</p>
+            <p class="title">Izvēlies, ja ir aktuāla:</p>
+            <ul>
+              <li>Fiksēta cena par konkrētu projektu, bez slēptām izmaksām</li>
+              <li>Ātra uzsākšana un skaidrs izpildes plāns</li>
+              <li>Vienkārša, tieša komunikācija</li>
+              <li>Iespēja projekta gaitā pievienot papildu pakalpojumus</li>
+              <li>Projektam pielāgota komanda un risinājumi</li>
+            </ul>
+            <div class="price-footer">
+              <p class="title">Izmaksas:</p>
+              <p class="price-tag">no 1000 € par projektu</p>
+              <div class="text-end">
+                <a href="#contacts" class="btn btn-primary mt-auto" aria-label="Pieteikt konsultāciju">
+                  Sākt sarunu
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="price-card">
+            <h3 class="mb-3">Ikmēneša sadarbība</h3>
+            <p>Pilna servisa digitālā mārketinga komanda par mazākām izmaksām nekā viena pilna laika darbinieka uzturēšana.</p>
+            <p class="title">Izvēlies, ja ir aktuāla:</p>
+            <ul>
+              <li>Pilna piekļuve Relook komandai un kompetencēm</li>
+              <li>Regulāras atskaites un fokusēšanās uz rezultātiem</li>
+              <li>Pakalpojumi pielāgoti tieši jūsu biznesa mērķiem</li>
+              <li>Sociālo tīklu, reklāmu un satura audits</li>
+              <li>Elastība – iespēja pielāgot vai paplašināt pakalpojumus</li>
+            </ul>
+            <div class="price-footer">
+              <div class="promo-box mb-3">
+                <span class="discount">50% atlaide </span><br>
+                <p class="title">pirmajam mēnesim</p>
+                <span class="discount-note">Sadarbību iespējams pārtraukt jebkurā brīdī.</span>
+              </div>
+              <p class="title">Izmaksas:</p>
+              <p class="price-tag">no 750 € mēnesī</p>
+              <div class="text-end">
+                <a href="#contacts" class="btn btn-primary mt-auto" aria-label="Pieteikt konsultāciju">
+                  Sākt sarunu
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="testimonials" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Mums uzticās klienti</h2>
+      <div class="row mb-4 testimonial-row-1">
+        <div class="col-md-9 col-lg-8">
+          <div class="testimonial-card">
+            <div class="testimonial-logo">
+              <img src="img/mitek.svg" alt="Mitek" class="img-fluid">
+            </div>
+            <div class="testimonial-content">
+              <h3>Mitek Baltic vadītājs</h3>
+              <p>Ar Relook jau sadarbojamies vairāku gadu garumā. Viņi mums nodrošina reklāmu menedžmentu Baltijas tirgū un ar Relook palīdzību izveidojām jaunu Baltijas sadarbības partneru mājaslapu, par kuru mūsu partneri ir ļoti priecīgi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-4 justify-content-center testimonial-row-2">
+        <div class="col-md-9 col-lg-8">
+          <div class="testimonial-card">
+            <div class="testimonial-logo">
+              <img src="img/skypark.svg" alt="Skypark" class="img-fluid">
+            </div>
+            <div class="testimonial-content">
+              <h3>Skypark mārketinga menedžere</h3>
+              <p>Relook izveidoja mums mārketinga stratēģiju, kuru palīdzēja arī ieviest. Kā rezultātā ir uzlabojušies mūsu pārdošanas un organiskā satura rezultāti. Novērtējam to, ka Relook
+                komanda strādā ļoti operatīvi un īsā laikā var tikt galā ar
+                mūsu uzdevumiem.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-5 testimonial-row-3">
+        <div class="col-md-9 col-lg-8">
+          <div class="testimonial-card">
+            <div class="testimonial-logo">
+              <img src="img/ieroci.svg" alt="Ieroči" class="img-fluid">
+            </div>
+            <div class="testimonial-content">
+              <h3>SIA Ieroči mārketinga vadītājs</h3>
+              <p>
+                Pirms sadarbības ar Relook, mums nebija pieejama
+                informācija par mūsu reklāmas kanālu effektivitāti. Relook
+                veica padziļinātu izpēti un palīdzēja mums optimizēt
+                mārketinga budžetu, izvēloties effektīvākos mārketinga
+                kanālus. Viens no lielākajiem šīs sadarbības ieguviem, ir
+                ikmēneša atskaite, kur vieglā un saprotamā valodā ir
+                izstāstīts par rezultātiem.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="client-logos-grid mt-5">
+        <img src="img/olearys.svg" alt="O'Learys">
+        <img src="img/apollokino.svg" alt="Apollo">
+        <img src="img/forevers.svg" alt="Forevers">
+        <img src="img/talava.svg" alt="Tālava">
+      </div>
+    </div>
+  </section>
+  <section id="benefits" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Kāpēc izvēlas Relook</h2>
+      <ul class="list-unstyled mx-auto" style="max-width: 600px;">
+        <li class="d-flex align-items-center mb-3">
+          <img src="img/steps.svg" alt="steps" class="me-3 benefit-icon">
+          <p class="mb-0">Strādājam, balstoties datos, nevis pieņēmumos vai trendos</p>
+        </li>
+        <li class="d-flex align-items-center mb-3">
+          <img src="img/bulb.svg" alt="bulb" class="me-3 benefit-icon">
+          <p class="mb-0">Praktiska pieredze, ne teorētiski modeļi</p>
+        </li>
+        <li class="d-flex align-items-center mb-3">
+          <img src="img/gear.svg" alt="gear" class="me-3 benefit-icon">
+          <p class="mb-0">Elastīga sadarbība: projekti vai ilgtermiņa sadarbība</p>
+        </li>
+        <li class="d-flex align-items-center mb-3">
+          <img src="img/arrow.svg" alt="arrow" class="me-3 benefit-icon">
+          <p class="mb-0">Skaidri KPI, atbildība un caurspīdīga komunikācija</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section id="contacts" class="py-5">
+    <div class="container">
+      <p class="text-center section-label">Kontakti</p>
+      <h2 class="text-center mb-4">Parunāsim par tavu mārketingu</h2>
+      <p class="text-center mb-5 mx-auto">Piesaki zvanu, lai saprastu, kā digitālais mārketings var strādāt tieši tava uzņēmuma izaugsmei</p>
+      <form id="contact-form" class="contact-form mx-auto">
+        <div class="mb-4">
+          <label for="name" class="form-label visually-hidden">Vārds</label>
+          <input type="text" class="form-control custom-input" id="name" name="name" placeholder="Vārds" required>
+        </div>
+        <div class="mb-4">
+          <label for="email" class="form-label visually-hidden">E-pasts</label>
+          <input type="email" class="form-control custom-input" id="email" name="email" placeholder="E-pasts" required>
+        </div>
+        <div class="mb-4 d-flex flex-column gap-3">
+          <div class="custom-radio">
+            <input class="form-check-input" type="radio" name="plan" id="plan30" value="30-dienas" checked>
+            <label class="form-check-label" for="plan30">30 dienas</label>
+          </div>
+          <div class="custom-radio">
+            <input class="form-check-input" type="radio" name="plan" id="planMonthly" value="ikmenesa">
+            <label class="form-check-label" for="planMonthly">Ikmēneša sadarbība</label>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label for="message" class="form-label visually-hidden">Ziņa</label>
+          <textarea class="form-control custom-input" id="message" name="message" rows="4" placeholder="Ziņa"></textarea>
+        </div>
+        <div class="text-end">
+          <button type="submit" class="btn btn-primary px-4">Sūtīt</button>
+        </div>
+        <p id="form-error" class="form-error" hidden>Kaut kas nogāja greizi. Lūdzu, mēģiniet vēlreiz vēlāk.</p>
+      </form>
+      <div id="form-success" class="text-center" hidden>
+        <h2>Paldies!<br>Sazināsimies ar tevi drīzumā.</h2>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer-section py-5">
+  <div class="container">
+    <div class="row align-items-start">
+      <div class="col-md-3 col-6 mb-4 mb-md-0">
+        <ul class="list-unstyled footer-nav">
+          <li><a href="#profiles" class="text-decoration-none">Klientu profili</a></li>
+          <li><a href="#services" class="text-decoration-none">Pakalpojumi</a></li>
+          <li><a href="#experience" class="text-decoration-none">Pieredze</a></li>
+          <li><a href="#prices" class="text-decoration-none">Cenas</a></li>
+          <li><a href="#contacts" class="text-decoration-none">Kontakti</a></li>
+        </ul>
+      </div>
+      <div class="col-md-5 col-6 mb-4 mb-md-0">
+        <div class="footer-privacy mb-4">
+          <a href="privacy.html">Privacy / cookies</a>
+        </div>
+        <div class="footer-socials d-flex gap-3">
+          <a href="https://www.facebook.com/RelookAgency" class="social-circle" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+            <img src="img/facebook.svg" alt="Facebook">
+          </a>
+          <a href="https://www.instagram.com/relook.agency/" class="social-circle" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <img src="img/instagram.svg" alt="Instagram">
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4 text-md-end text-start">
+        <a class="footer-logo" href="./">
+          <img src="img/footer_logo.svg" alt="Relook" height="24">
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/app.js"></script>
 </body>
-
 </html>
