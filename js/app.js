@@ -1,4 +1,4 @@
-const WEB3FORMS_KEY = 'c8c8f1f3-4fd2-4e99-bdc4-45e4c10acc95';
+const WEB3FORMS_KEY = '9e682884-15ee-48d3-af6f-997fb59b3ba9';
 
 document.addEventListener('DOMContentLoaded', () => {
 
