@@ -1,13 +1,22 @@
 {
   "short_name": "Relook",
   "name": "Relook Agency",
-  "icons": [{
-    "src": "icon.png",
-    "type": "image/png",
-    "sizes": "32x32"
-  }],
+  "icons": [
+    {
+        "src": "icon.png",
+        "type": "image/png",
+        "sizes": "32x32"
+    },
+    {
+        "src": "icon_192_192.png",
+        "type": "image/png",
+        "sizes": "192x192",
+        "purpose": "any"
+    }
+ ],
   "start_url": "./?utm_source=homescreen",
   "background_color": "#f8fafc",
   "theme_color": "#12AEA1",
-  "display": "standalone"
+  "display": "standalone",
+  "orientation": "portrait"
 }
