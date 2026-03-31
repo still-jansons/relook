@@ -45,7 +45,7 @@ section h1,
 section h2 {
   color: var(--color-heading);
   font-weight: 300;
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 1.2;
   text-align: center;
   margin-bottom: 30px;
@@ -57,7 +57,7 @@ section h2 {
 section h3 {
   color: var(--color-heading);
   font-weight: 300;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-bottom: 20px;
 }
 
@@ -65,7 +65,7 @@ section h3 {
   color: var(--color-text-light);
   display: block;
   font-weight: 400;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 /* ─── Section Spacing ────────────────────────────────────────────────────── */
@@ -431,7 +431,7 @@ main section {
 .testimonial-content p,
 #benefits p,
 #contacts p:not(.section-label) {
-  font-size: 16px;
+  font-size: 14px;
   color: var(--color-text);
   font-weight: 400;
   line-height: 1.6;
@@ -449,7 +449,6 @@ main section {
 #hero ul li strong {
   color: var(--color-text-light);
   font-weight: 500;
-  font-size: 1.1rem;
 }
 
 #profiles h2,
@@ -512,7 +511,7 @@ main section {
   transition: transform 0.3s ease;
   padding: 24px;
   cursor: default;
-  font-size: 16px;
+  font-size: 14px;
   color: var(--color-text);
   font-weight: 400;
   line-height: 1.6;
@@ -545,7 +544,7 @@ main section {
 
 .stat-card h3 {
   color: var(--color-text-light);
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 300;
   margin-bottom: 10px;
 }
@@ -569,7 +568,7 @@ main section {
 #prices .title {
   color: var(--color-heading);
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-top: 16px;
   margin-bottom: 0;
 }
@@ -585,7 +584,7 @@ main section {
   position: relative;
   padding-left: 20px;
   margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 14px;
   color: var(--color-text);
   font-weight: 400;
   line-height: 1.6;
@@ -606,7 +605,7 @@ main section {
 }
 
 .price-tag {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 500;
   color: var(--color-text);
   margin-bottom: 20px;
@@ -615,7 +614,7 @@ main section {
 .discount {
   color: var(--color-heading);
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 #prices .promo-box .title {
@@ -647,7 +646,7 @@ main section {
 }
 
 .testimonial-content h3 {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: var(--color-text);
   margin-bottom: 20px;
