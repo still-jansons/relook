@@ -10,6 +10,13 @@ module.exports = merge(common, {
     hot: true,
     open: true,
     static: ['./'],
+    // Same idea as nginx try_files $uri $uri.html: clean URLs without .html
+    historyApiFallback: {
+      rewrites: [
+        { from: /^\/privacy\/?$/, to: '/privacy.html' },
+        { from: /^\/en\/privacy\/?$/, to: '/en/privacy.html' },
+      ],
+    },
   },
   plugins: [
     new CopyPlugin({
