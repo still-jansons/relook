@@ -1,0 +1,8 @@
+node_modules
+dist
+.git
+.idea
+.editorconfig
+nginx.local.conf
+LICENSE.txt
+*.md
